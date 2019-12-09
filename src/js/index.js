@@ -19,14 +19,18 @@
         //top
         $(function(){
             $(window).scroll(function(){
-                if ($(window).scrollTop() >= 50){
-                    $('#jump li').fadeIn();
+                if ($(window).scrollTop() >= 100){
+                    $('#jump ul').fadeIn();
                 }
                 else {
-                    $('#jump li').fadeOut();
+                    $('#jump ul').fadeOut();
                 }
             })
         })
+
+        $('#jump #top').click(function () {
+            $('html,body').stop().animate({ scrollTop: 0 }, 500);
+        });
 
 
 
