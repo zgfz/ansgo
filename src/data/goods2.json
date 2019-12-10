@@ -1,29 +1,4 @@
 [{
-    "img":"images/1.png",
-    "name":"Bubs 羊奶粉 6罐装,1段",
-    "price":"279.00",
-    "goodsId":"11"
-},{
-    "img":"images/2.png",
-    "name":"A2 Platinum白金系列高端牛奶粉3段 6罐装",
-    "price":"289.00",
-    "goodsId":"22"
-},{
-    "img":"images/3.png",
-    "name":"Aptamil爱他美金装牛奶粉900克4段 6罐装",
-    "price":"219.00",
-    "goodsId":"33"
-},{
-    "img":"images/4.png",
-    "name":"贝拉米Bellamy's有机奶粉900g3段 6罐装",
-    "price":"269.00",
-    "goodsId":"44"
-},{
-    "img":"images/5.png",
-    "name":"Aptamil爱他美白金版牛奶粉3段 6罐装",
-    "price":"309.00",
-    "goodsId":"55"
-    },{
     "img":"images/a.jpg",
     "name":"Cemoy 安瓶21天极光早安精华液 2ml*21包 ",
     "price":"34.50",
@@ -49,4 +24,3 @@
     "price":"32.90",
     "goodsId":"e"
     }]
-
