@@ -19,6 +19,7 @@
     }
     .Magnifier{
         .left{
+            float:left;
             background: #fff;
             .sBox{
                 // margin: 10px;
@@ -106,5 +107,120 @@
                 }
             }
         }
+    .right{
+        z-index:-1;
+        float: left;
+        width: 665px;
+        margin-left: 4px;
+        position: relative;
+        padding-top: 10px;
+        background: #fff;
+        h1{float: left;
+        font-weight: normal;}
+        .pro_title{
+            font-size: 24px;
+            color: #333333;
+            font-family: \5fae\8f6f\96c5\9ed1, simsun;
+            line-height: 30px;
+            margin-bottom: 5px;
+            margin-top: 8px;
+        }
+        .box1{
+            position: relative;
+            float: left;
+            width: 665px;
+            background: #F9F9F9;
+            border-top: 1px #eee solid;
+            padding: 2px 0px;
+            height: 123px;
+            .price_title{
+                color: #c53029;
+                font-weight: bold;
+                font-size: 15px;    
+                width:72px;
+                margin-top: 8px;
+                padding-left:20px;
+            }
+            .price{
+                padding-left:40px;
+                display: inline-block;
+                margin-left: 5px;
+                padding-top: 4px;
+                color: #c53029;
+                font-size: 26px;
+                font-weight: 600;
+                vertical-align: baseline;
+            }
+            .RMB{
+                padding-left:20px;
+                line-height: 15px;
+                margin-top: 10px;
+                font-size: 12px;
+                color: #999999;
+                vertical-align: 5px;
+            }
+            .links{
+                display: block;
+                padding-left:20px;
+                color: #c53029;
+                outline: none;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: bold;
+                padding-top: 20px;
+            }  
+            .weixin{
+                float: right;
+                position: absolute;
+                right:0;
+                top:0;
+                text-align:center;
+                background: #fff;
+                border: 1px #d0d0d0 solid;
+                padding:0 15px;
+                img{
+                    vertical-align: middle;
+                    width: 95px;
+                    height: 90px;
+                }
+            }
+        }
+        .all_warp{
+            margin-bottom: 5px;
+            color: #666;
+            .left{
+                border-bottom: 1px dotted #e7e7e7;
+                float:left;
+                position: relative;
+                top: 0;
+                left: 0;
+                font-size: 14px;
+                color: #666;
+                padding: 4px 0;
+                ._weight{
+                    display: inline-block;
+                    width: 72px;
+                    color: #666666;
+                    padding-left: 10px;
+                }
+                .specs{
+                    color: #666;
+                    margin-left: 5px;
+                }
+                .tariff{
+                    position: relative;
+                    margin-left: 4px;
+                    display: inline-block;
+                    height: 32px;
+                    min-width: 136px;
+                    line-height: 32px;
+                    border: 1px #fff solid;
+                }
+                .tariff_rules_text{
+                    display: none;
+                }   
+            }
+            }
+        }
     }
-}
+    }
