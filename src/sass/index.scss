@@ -585,17 +585,23 @@
         margin-left: 50px;
         li{
             margin-bottom: 20px;
-            .iconm {
-                width: 19px;
-                height: 14px;
-                background-position: 0 -96px;
-            }
+            
             .icon{
                 float:left;
                 background: url("../images/icons.png") no-repeat;
                 margin-right: 5px;
             }
+            .iconm{
+                width: 19px;
+                height: 14px;
+                background-position: 0 -96px;
+            }
             p{margin-bottom: 5px;}
+            .icons{
+                width: 19px;
+                height: 16px;
+                background-position: 0 -110px;
+            }
             .box3{
                 width: 100px;
                 float: left;
