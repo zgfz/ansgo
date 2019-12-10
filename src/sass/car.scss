@@ -1,0 +1,244 @@
+.margin{margin:0 auto;width:1200px;}
+.margin2{background:#f5f5f5;}
+
+#top{height:30px;border-bottom: 2px solid #f2f2f2;
+    $color:#666;color:$color;
+    $font-size:12px;font-size:$font-size;
+    $line-height:30px;line-height:$line-height;
+    #login_box{
+        float:left;
+    }
+    .exchange{
+        float:left;
+        margin-left: 20px;
+        float: left;
+    }
+    .right{float:right;
+    li{margin:auto 10px;
+        float:left;
+        a{
+            &:hover{
+                color:#f00;
+            }
+        }
+    }
+    }
+    }
+
+#header{
+    height: 65px;
+    padding-top: 35px;
+    .logo{
+        float:left;
+    }
+    h1{
+        float: left;
+        margin-left: 18px;
+        border-left: 2px #dadada solid;
+        padding-left: 14px;
+        margin-top: 6px;
+        font-size: 18px;
+        font-weight: normal ;
+    }
+    .cart_nav1{
+        background: url("../images/cart_nav.png") 0 0;
+        width: 520px;
+        height: 45px;
+        float: right;
+        margin-top: -5px;
+    }
+}
+
+
+#cont{
+    background: #f5f5f5;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    
+}
+
+
+
+
+    .ourAdv {
+        background: #3778d2;
+        width: 100%;
+        height: 325px;
+        font-size: 14px;
+        .allwarp {
+            width: 1200px;
+            margin: 0 auto;
+            ul{
+                li{
+                    width: 370px;
+                    height: 78px;
+                    float: left;
+                    margin-left: 30px;
+                    margin-top: 54px;
+                    .icon{
+                        float:left;
+                        width: 65px;
+                        height: 65px;
+                        background: url("../images/icons.png") no-repeat;
+                    }
+                    .icon1{
+                        background-position: -24px 0;
+                    }
+                    .icon2 {
+                        background-position: -91px 0;
+                    }
+                    .icon3 {
+                        background-position: -158px 0;
+                    }
+                    .icon4 {
+                        background-position: -227px 0;
+                    }
+                    .icon5 {
+                        background-position: -293px 0;
+                    }
+                    .icon6 {
+                        background-position: -23px -70px;
+                    }
+                    .textIntro{
+                        width: 250px;
+                        margin-left:28px;
+                        color:#fff;
+                        float:left;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    
+    #footer{
+        width: 100%;
+        height: 380px;
+        background: #fff;
+        min-width: 1200px;
+        .ansgoIntro{
+            float: left;;
+            width: 380px;
+            .logo{
+                width: 194px;
+                height: 58px;
+                background: url("../images/icons.png") no-repeat;
+                background-position: -94px -70px;
+                margin: 50px 0 50px 0;
+            }
+        .addr{
+            display:block;
+            .margR{
+                float: left;
+                margin-right: 36px;
+                p{
+                    width: 155px;
+                    color: #666666;
+                    font-size: 12px;
+                    font-family: "arial";
+                    margin: 5px 0;
+                    a{
+                        outline: none;
+                        cursor: pointer;
+                        color: #428bca;
+                    }
+                }
+            }
+            .box1{
+                float: left;
+                p{
+                    width: 155px;
+                    color: #666666;
+                    font-size: 12px;
+                    font-family: "arial";
+                    margin: 5px 0;
+                    a{
+                        outline: none;
+                        cursor: pointer;
+                        color: #428bca;
+                    }
+                }
+            }
+        }
+        }
+    
+        .linksHome{
+            float: left;
+            width: 130px;
+            height: 140px;
+            margin-top: 40px;
+            li{
+                float: left;
+                margin: 10px 0 15px 50px;
+                a{
+                    font-size: 14px;
+                    color: #666;
+                    // margin-bottom: 5px;
+                }
+            }
+        }
+        .payWays{
+            float:left;
+            width: 170px;
+            margin: 50px 0 0 50px;
+            li{
+                background: url("../images/icons.png") no-repeat;
+                width: 110px;
+                height: 46px;
+                margin-bottom: 10px;
+            }
+            .icon1{
+                background-position: -23px -137px;
+            }
+            .icon2{
+                background-position: -136px -137px;
+            }
+            .icon3{
+                background-position: -248px -137px;
+            }
+        }
+    
+        .contactWays {
+            float:left;
+            width: 290px;
+            margin-top: 50px;
+            color: #666666;
+            font-size: 14px;
+            margin-left: 50px;
+            li{
+                margin-bottom: 20px;
+                
+                .icon{
+                    float:left;
+                    background: url("../images/icons.png") no-repeat;
+                    margin-right: 5px;
+                }
+                .iconm{
+                    width: 19px;
+                    height: 14px;
+                    background-position: 0 -96px;
+                }
+                p{margin-bottom: 5px;}
+                .icons{
+                    width: 19px;
+                    height: 16px;
+                    background-position: 0 -110px;
+                }
+                .box3{
+                    width: 100px;
+                    float: left;
+                    text-align: center;
+                    color: #666666;
+                    font-size: 14px;
+                    img{
+                        border: 1px solid #ddd;
+                        width: 100%;
+                    }
+                }
+                .box4{margin-left: 15px;}
+            }
+        }
+    }
+    
+    
+

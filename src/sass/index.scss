@@ -120,8 +120,6 @@
                 max-height: 370px;
                 overflow: hidden;
                 z-index: 75;
-                // top: 40px;
-                // left: 0;
                 background:rgba(255,255,255,.7);
                 li{
                     a{
@@ -355,7 +353,6 @@
 
 
     .margin{
-        // position: relative;
         margin-top: 40px;
         .title{
             background: url("../images/product-title-bg.png") center repeat-x;
@@ -376,7 +373,7 @@
                 }
             }
         }
-        .conts{
+        #conts{
             ul{
                 li{
                     background:#fff;
@@ -480,7 +477,6 @@
                     float:left;
                     text-align: left;
                 }
-                // .f1{float:left;}
             }
         }
     }
@@ -491,9 +487,7 @@
     height: 380px;
     background: #fff;
     min-width: 1200px;
-    // .f1{
-    //     float:left;
-    // }
+
     .ansgoIntro{
         float: left;;
         width: 380px;
@@ -551,7 +545,6 @@
             a{
                 font-size: 14px;
                 color: #666;
-                // margin-bottom: 5px;
             }
         }
     }
