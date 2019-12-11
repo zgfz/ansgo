@@ -64,6 +64,8 @@
                 }
                 form{
                     float:left;
+                    .error{background: #f00;color:#fff;}
+                    .valid{background: #0f0;}
                 .form-group{
                     margin: 10px 0;
                     p{
@@ -84,7 +86,7 @@
                         border-radius: 0px;
                         float: left;
                     }
-                    #btn{
+                    .reg{
                         margin: 10px 0 10px;
                         padding: 8px 30px;
                         font-size: 14px;
@@ -94,6 +96,13 @@
                         cursor: pointer;
                         text-align: center;
                         border-radius: 2px;
+                    }
+                    em{
+                        // float: left;
+                        font-size: 12px;
+                        a{
+                            margin-top:22px;
+                        }
                     }
                 }
             }

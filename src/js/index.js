@@ -2,6 +2,45 @@
 
 ;(
     function(){
+
+        // login status
+        class Index{
+			constructor(){
+				this.login2 = document.querySelector(".login2");
+				this.welcome2 = document.querySelector(".welcome2");
+				this.user = this.welcome2.querySelector("span");
+				this.exit = this.welcome2.querySelector("em");
+				
+				this.getMsg();
+				this.addEvent()
+			}
+			addEvent(){
+				var that = this;
+				this.exit.onclick = function(){
+					that.msg[that.i].onoff = "0";
+					setCookie("userMsg",JSON.stringify(that.msg));
+					location.reload();
+				}
+			}
+			getMsg(){
+				this.msg = getCookie("userMsg") ? JSON.parse(getCookie("userMsg")) : [];
+				
+				this.i = null; 
+				var type = this.msg.some((val,idx)=>{
+					this.i = idx;
+					return val.onoff === 1;
+				})
+				
+				if(type){
+					this.login2.style.display = "none";
+					this.welcome2.style.display = "block";
+					this.user.innerHTML = this.msg[this.i].user;
+				}
+			}
+		}
+		new Index;
+
+
         // nav
         $("#nav .nav-all").children("li").mouseenter(function(){
             $(this)
