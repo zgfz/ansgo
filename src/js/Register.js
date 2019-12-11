@@ -70,5 +70,4 @@ class Register{
 new Register;
 
 
-
 })();

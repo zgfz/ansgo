@@ -86,6 +86,27 @@
         })
 
 
+        // 楼层
+        $("._nav li").click(function(){
+            var i = $(this).index();
+            var s = $("div.remai").offset().top;
+            var t = $("div.new1").offset().top;
+            if(i==0){
+                $(this).addClass("active").siblings().removeClass("active");
+                $("html").stop().animate({
+                    scrollTop:s,
+                })
+            }
+            if(i==1){
+                $(this).addClass("active").siblings().removeClass("active");
+                // $(".active").show()
+                $("html").stop().animate({
+                    scrollTop:t,
+                })
+            }
+        })
+
+
 //list
 class List{
     constructor(){      //获取
