@@ -18,6 +18,7 @@
         }
     }
     .Magnifier{
+        // height:1200px;
         .left{
             float:left;
             background: #fff;
@@ -222,5 +223,50 @@
             }
             }
         }
+
+        .kucun{
+            z-index: -1;
+            position: relative; 
+            text-align: center;
+            font-size: 16px;
+            .jia{
+                position: absolute;
+                left:380px;top:313px;
+                input{
+                    width:50px;
+                }
+            }
+
+           p{
+               position: absolute;
+               left:500px;top:300px;
+               width:142px;
+               height:42px;
+               line-height: 42px;
+               background:#fff;
+               color: #cc3232;
+                cursor: pointer;
+                border: 1px solid #cc3232;
+                font-size: 18px;
+                border-radius: 2px;
+                &:hover{
+                    background: #cc3232;
+                    color:#fff;
+                    transition:0.3s;;
+                }
+           }
+           .datu{
+               position: absolute;
+               left:1040px;
+               top:0;
+           }
+        }
+
+
+
+
+
+
+
     }
-    }
+}

@@ -388,7 +388,6 @@
                         background: #3678d2;
                         color: #fff;
                     }
-                   
                 }
                 #top{
                     background: url("../images/ft_top.png") no-repeat;
@@ -422,7 +421,7 @@
             }
         }
         #cont,#cont1{
-            border:1px solid #000;
+            // border:1px solid #000;
             width:1200px;height:300px;overflow:hidden;
             .box{
                 width:207px;
@@ -466,6 +465,94 @@
             }
         }
     }
+
+    #tab{
+        font-size: 14px;
+        color: #333;
+        width: 1190px;
+        background: #fff;
+        margin-top: 20px;
+        height: 328px;
+        .tab1{
+            display: flex;
+            width: 1000px;
+            height: 50px;
+            margin: 0 auto;
+            text-align:center;
+            h3{
+                flex: 1;
+                line-height: 48px;
+                cursor: pointer;
+                font-weight: normal;
+            }
+                .active{
+                border-bottom: 2px solid #343434;
+                font-weight: bold;
+                }
+        }
+        .tab2{
+            width: 1190px;
+            height: 280px;
+            .s1{
+                height: 280px;
+                img{
+                    float:left;
+                    border: 0;
+                    vertical-align: middle;
+                }
+                .cont2{
+                    background: #fb4f65;
+                    float:left;
+                    .box{
+                        width: 166px;
+                        height: 241px;
+                        background: #fff;
+                        float: left;
+                        // margin-left: 10px;
+                        margin-top: 8px;
+                        margin-right: 10px;
+                        margin-bottom: 6px;;
+                        padding: 18px 12px 5px 22px;
+                        overflow: hidden;
+                        img{
+                            cursor: pointer;
+                            width: 150px;
+                            height: 150px;
+                        }
+                        p{
+                            float:left;
+                            color: #6a6665;
+                            // margin: 4px 0 0;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            height: 40px;
+                        }
+                        span{
+                            float:left;
+                            font-weight: bold;
+                            color: #353334;
+                            font-size: 16px;
+                        }
+                        em{
+                            float:left;
+                            margin-top: 5px;
+                            background: #ff9c00;
+                            color: #fff;
+                            width: 170px;
+                            height: 30px;
+                            display: block;
+                            text-align: center;
+                            line-height: 30px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 .ourAdv {

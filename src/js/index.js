@@ -89,15 +89,22 @@
         // 楼层
         $("._nav li").click(function(){
             var i = $(this).index();
+            var q = $("#header").offset().top;
             var s = $("div.remai").offset().top;
             var t = $("div.new1").offset().top;
             if(i==0){
                 $(this).addClass("active").siblings().removeClass("active");
                 $("html").stop().animate({
-                    scrollTop:s,
+                    scrollTop:q,
                 })
             }
             if(i==1){
+                $(this).addClass("active").siblings().removeClass("active");
+                $("html").stop().animate({
+                    scrollTop:s,
+                })
+            }
+            if(i==2){
                 $(this).addClass("active").siblings().removeClass("active");
                 // $(".active").show()
                 $("html").stop().animate({
@@ -113,6 +120,7 @@ class List{
         this.url = "http://localhost:82/data/goods.json"
         this.cont = document.getElementById("cont");
         this.cont1 = document.getElementById("cont1");
+        this.cont2 = document.getElementById("cont2");
         this.load();
         this.addEvent();    //初始绑定事件
     }
@@ -123,6 +131,7 @@ class List{
             // console.log(that.res);
             that.display();
             that.display2();
+            that.display3();
         })
     }
 
@@ -150,6 +159,18 @@ class List{
         }
         this.cont1.innerHTML = str;
     }
+    display3(){      //渲染数据
+        var str ="";
+        for(var i = 10;i<14;i++){
+            str +=`<div class="box" index="${this.res[i].goodsId}">
+                        <img src="${this.res[i].img}" alt="">
+                        <p>${this.res[i].name}</p>
+                        <span>${this.res[i].price}</span>
+                        <em class="addCar">加入购物车</em>
+                    </div>`;
+        }
+        this.cont2.innerHTML = str;
+    }
 
     addEvent(){     //事件监听式绑定事件
         var that =this
@@ -163,6 +184,15 @@ class List{
             }
         })
         this.cont1.addEventListener("click",function(eve){
+            var e = eve || window.event;
+            var target = e.target || e.srcElement;
+            if(target.className == "addCar"){       //找ID，绑定，
+                that.id = target.parentNode.getAttribute("index");  //获取index（就是goodsId)
+                // console.log(that.id) 
+                that.setCookie();
+            }
+        })
+        this.cont2.addEventListener("click",function(eve){
             var e = eve || window.event;
             var target = e.target || e.srcElement;
             if(target.className == "addCar"){       //找ID，绑定，
@@ -204,6 +234,21 @@ class List{
     }
 }
 new List;
+
+// tab选项卡
+$(function(){
+    $(".tab1 h3").removeClass("active").eq(0).addClass("active").css("font-weight:bold");		//默认第一个
+    $(".tab2 .q").hide().eq(0).show()		//默认第一个
+    
+    $(".tab1 h3").on("click",function(){	//事件委托
+        var _index = $(this).index();
+        $(".tab1 h3").removeClass("active").css("background","none").eq(_index).addClass("active").css("font-weight:bold");
+        $(".tab2 .q").hide().eq(_index).show();
+    })
+})
+
+
+
 
 
 
