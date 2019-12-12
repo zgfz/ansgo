@@ -26,14 +26,14 @@
             var str = "";
             for(var i = 0;i<this.res.length;i++){
                 for(var j = 0;j<this.goods.length;j++){
-                    var _p = this.res[i].price * this.goods[j].num
+                    var _p = +this.res[i].price * this.goods[j].num
                     if(this.res[i].goodsId == this.goods[j].id){   //id相同的话
                         str +=`<tr index="${this.res[i].goodsId}">
                             <td><input type ="checkbox" name="selects" id="selects" class="check" value="${this.res[i].goodsId}"></td>
                             <td><img src="${this.res[i].img}"/></td>
                             <td>${this.res[i].name}</td>
                             <td>${this.res[i].price}</td>
-                            <td><input type="number" class="shu" min=1 value="${this.goods[j].num}"/></td>
+                            <td><input type="number" class="shu" name="ner" min=1 value="${this.goods[j].num}"/></td>
                             <td class="xiaoji">${_p}</td>
                             <td class="delete">删除</td>
                             </tr>`
@@ -41,7 +41,7 @@
                 }
             }
             this.tbody.innerHTML = str+`<tr>	
-											<td colspan="4">总价:￥</td>
+											<td colspan="4" class="allPrice">总价:￥</td>
 											<td class="allNum">总数量:</td>
 											<td class="te1">结算</td>
 											<td class="deleteAll">全部删除</td>
@@ -97,7 +97,8 @@
 
                     //     e.target.parentNode.nextElementSibling.innerHTML = e.target.parentNode.previousElementSibling.innerText
                     // }
-                    }        
+                    } 
+
                     });
                 }
             })
@@ -115,6 +116,7 @@
             })
             //单选
             var checkS = $(".check");
+            var that = this;
                     // console.log(checkS);
             for(var i = 0;i<checkS.length;i++){
                 checkS[i].onclick = function(){
@@ -133,7 +135,35 @@
                     }
                 }
             }
+            that.numTotal();
+            that.calTotal();
+
         }
+    // 总数量
+       numTotal(){
+            var total = 0;
+            var tds = $("tbody tr :nth-child(5) input[name='ner']");
+            // console.log(tds);
+            tds.each(function(){
+                var v = $(this).val();
+                // console.log(v);
+                total =total + parseInt(v);
+            });
+            $(".allNum").html("总数量共："+total+"件");
+            // console.log(total);
+        }
+    // 总价  
+        calTotal(){
+            var total = 0;
+            var tds = $("tbody tr :nth-child(6)");
+            tds.each(function(){
+                var v = $(this).text();
+                total =total + parseFloat(v);
+            });
+            $(".allPrice").html("商品总价为:¥ "+total+"元");
+            // console.log(total);
+        }
+
         // 操作数组
         changeCookie(cb){
             for(var i = 0;i<this.goods.length;i++){     //遍历goods

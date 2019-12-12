@@ -92,6 +92,7 @@
             var q = $("#header").offset().top;
             var s = $("div.remai").offset().top;
             var t = $("div.new1").offset().top;
+            var w = $("#footer").offset().top;
             if(i==0){
                 $(this).addClass("active").siblings().removeClass("active");
                 $("html").stop().animate({
@@ -109,6 +110,13 @@
                 // $(".active").show()
                 $("html").stop().animate({
                     scrollTop:t,
+                })
+            }
+            if(i==3){
+                $(this).addClass("active").siblings().removeClass("active");
+                // $(".active").show()
+                $("html").stop().animate({
+                    scrollTop:w,
                 })
             }
         })
@@ -200,6 +208,10 @@ class List{
                 // console.log(that.id) 
                 that.setCookie();
             }
+        })
+
+        $("#cont").click(function(){
+            location.href="http://localhost:82/Commodity details.html";
         })
     }
     setCookie(){        
