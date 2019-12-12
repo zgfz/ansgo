@@ -262,11 +262,28 @@
            }
         }
 
-
-
-
-
-
-
     }
 }
+
+._find{
+    // height:1000px;
+    width:1000px;
+    background: #fff;
+    margin-left:160px;
+    float:left; 
+    .box{
+        background: #eee;
+        height:1114px;
+    }    
+    .cont{display:flex;}
+        .cont h3{height:41px;flex:1;;text-align:center;font:16px/41px "";}
+		.cont2 p:nth-child(2){background:#9ff;}
+		.cont2 p:nth-child(3){background:#f99;}
+        .cont2 img{margin-left:100px;}
+        p{height:1114px;}
+        
+        
+}
+
+
+

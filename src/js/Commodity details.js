@@ -61,8 +61,18 @@ class Magnifier{
 
 new Magnifier();
 
-
-
+// 选卡2
+$(function(){
+		$(".cont h3").removeClass("active").eq(0).addClass("active").css("background","#666");		//默认第一个
+		$(".cont2 p").hide().eq(0).show()		//默认第一个
+		
+		$(".cont h3").on("click",function(){	//事件委托
+			// console.log(1)
+			var _index = $(this).index();
+			$(".cont h3").removeClass("active").css("background","none").eq(_index).addClass("active").css("background","#666");
+			$(".cont2 p").hide().eq(_index).show();
+		})
+	})
 
 
 
