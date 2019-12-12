@@ -3,6 +3,10 @@
 ;(
     function(){
 
+        $(".btn-search").click(function(){
+            location.href="http://localhost:82/index2.html"
+        })
+        
         // login status
         class Index{
 			constructor(){
@@ -210,7 +214,7 @@ class List{
             }
         })
 
-        $("#cont").click(function(){
+        $("#cont1").click(function(){
             location.href="http://localhost:82/Commodity details.html";
         })
     }
@@ -259,7 +263,16 @@ $(function(){
     })
 })
 
-
+$(".banner2").banner({
+    items:$(".banner2").find("img"),
+    left:$(".banner2").find("#left2"),
+    right:$(".banner2").find("#right2"),
+    list:true,     //小圆点
+    index:0,
+    // autoPlay:true,
+    delayTime:4000,
+    moveTime:800,
+})
 
 
 
