@@ -1,9 +1,0 @@
-仲国：https://github.com/zgfz/ansgo/commits/master：安适购商城
-项目说明书：
-1.通过localhost:82打开，服务器环境下
-2.sass路径，自己看http://localhost:82/index.scss
-3.模块化，index2，index2,
-4.gulp环境
-5.项目修复了安适购的楼层stop（）bug问题，以及页面布局的优化，外观优化，
-6，无法适配移动端，性能有待优化，bug，更多组合欢迎来测试，
-7.无补充
