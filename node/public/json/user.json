@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5dffa359fa1aa24e29f59509"},"username":"hehe","password":"123"}
+{"_id":{"$oid":"5dffa734fa1aa24e29f5950a"},"username":"heheda","password":"1234"}
+{"_id":{"$oid":"5e1988cb8e23d12ed4e23749"},"nikename":"找个生成包来系统生成昵称","username":"123","fans":0,"follow":0,"time":1.578731723061E+12,"icon":"/upload/noimage.png","password":"$2a$10$Ivk0QpsG7llw2Fgh4nHD4.cmnXV6sjcDIDiS68feMeOkoE.E53vRS"}
+{"_id":{"$oid":"5e19894b8e23d12ed4e2374a"},"nikename":"找个生成包来系统生成昵称","username":"12","fans":0,"follow":0,"time":1.578731851382E+12,"icon":"/upload/user/e9ab024c86c2fa38fb7dd1cbc17ce59a.jpg","password":"$2a$10$z85W3RBpb5Z1ajRZNbJnzO518/JTqAun.LmsBiKdVwGMZJE.Dbey6"}
